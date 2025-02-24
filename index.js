@@ -13,7 +13,7 @@ GlobalFonts.register(
 );
 
 const DPI = 3;
-const canvas = createCanvas(320 * DPI, 300 * DPI);
+const canvas = createCanvas(320 * DPI, 180 * DPI);
 
 const ctx = canvas.getContext("2d");
 ctx.translate(0.5, 0.5);
