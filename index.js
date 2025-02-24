@@ -3,6 +3,7 @@ import axios from "axios";
 
 import { GlobalFonts, createCanvas, loadImage } from "@napi-rs/canvas";
 
+// If I change this font to other it sometimes fixes the issue too!
 import POPPINS_REGULAR from "./Poppins.ttf" with { type: "file" };
 
 // Fonts
@@ -28,7 +29,7 @@ ctx.font = 'bold 72px "Poppins"';
 ctx.fillStyle = "#2B2B2B";
 ctx.fillText("wow, i'm fine", 12 * DPI, 42 * DPI);
 
-// FETCH: Works
+// FETCH: When i swap to using fetch it seems to work too!
 /*
 const image = await fetch(
   "https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg"
@@ -36,7 +37,7 @@ const image = await fetch(
 const doge = await loadImage(await image.arrayBuffer());
 */
 
-/* AXIOS: Bricks */
+/* AXIOS: Bricks when using provided font but when i change the font to other it works??? */
 const image = await axios({
   method: "get",
   responseType: "arraybuffer",
