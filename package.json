@@ -1,0 +1,16 @@
+{
+  "name": "cursed",
+  "module": "index.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.67",
+    "axios": "^1.7.9"
+  }
+}
