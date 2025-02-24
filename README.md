@@ -1,15 +1,11 @@
 # cursed
 
-To install dependencies:
-
 ```bash
 bun install
-```
 
-To run:
-
-```bash
+# Correctly outputs
 bun run index.js
+# Cursed
+bun build ./index.js --compile
+./index
 ```
-
-This project was created using `bun init` in bun v1.2.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
